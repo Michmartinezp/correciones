@@ -1095,7 +1095,11 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
 }
-
+.subtitle {
+  color: #042940; /* Cambia el color según tu preferencia */
+  font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
+  margin-top: 10px; /* Espacio entre el título y el subtítulo */
+}
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
