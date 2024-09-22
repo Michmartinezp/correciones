@@ -684,7 +684,7 @@ section,
 
 .hero h2 {
     font-family: 'archivo black';
-    font-weight: bold; /* Puedes definir el grosor de la fuente */
+    font-weight: bold; /*  definir el grosor de la fuente */
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -697,7 +697,7 @@ section,
 }
 
 .hero p { font-family: 'space grotesk';
-    font-weight: normal; /* Puedes definir el grosor de la fuente */
+    font-weight: normal; /*definir el grosor de la fuente */
   color: #042940
   font-weight: 400;
   margin-bottom: 30px;
@@ -779,12 +779,12 @@ section,
 }
 /* Cambiar el color del texto del título (h4) */
 .icon-box h4 {
-  color: #730202; /* Cambia este valor al color que desees */
+  color: #730202; 
 }
 
 /* Cambiar el color del texto del párrafo (p) */
 .icon-box p {
-  color: #042940; /* Cambia este valor al color que desees */
+  color: #042940; 
 }
 .hero .icon-box .title {
   font-weight: 700;
@@ -802,10 +802,16 @@ section,
   padding-top: 10px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 1;
   color: var(--accent-color);
 }
+.hero .icon-box .icon img {
+  width: 50px !important;  
+  height: 50px !important;
+  object-fit: contain!important;
+}
+
 
 .hero .icon-box:hover {
   background-color: var(--accent-color);
@@ -828,15 +834,22 @@ section,
 .about .content h3 {
   font-size: 2rem;
   font-weight: 700;
+    margin-top: 150px
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+    margin-top: 30px
 }
+
 
 .about .content ul li {
   padding-bottom: 10px;
+}
+.bold-part {
+  font-weight: bold;
+    color: #042940;
 }
 
 .about .content ul i {
@@ -850,8 +863,8 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #F2EFDF;
+  color: #042940;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -863,12 +876,18 @@ section,
   align-items: center;
   justify-content: center;
 }
+.about .content {
+  color: #042940; 
+}
 
 .about .content .read-more i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
+}
+.about {
+  background-color: #F2EFDF;
 }
 
 .about .content .read-more:hover {
@@ -888,54 +907,59 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 30px;
+  background-color: #F2EFDF;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
-  border-bottom: 5px solid var(--surface-color);
+  border-bottom: 5px #F2EFDF;
   height: 100%;
+}
+.services {
+    background-color: #F2EFDF; /* Cambia este color por el que desees */
+    padding: 30px 0; /
 }
 
 .services .service-item .icon {
   color: var(--contrast-color);
   background: var(--accent-color);
-  margin: 0;
+  margin: 0 auto;
   width: 64px;
   height: 64px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom:34px;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
 .services .service-item h3 {
   font-weight: 700;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 4px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
+    text-align: center; /* Esto centra el texto */
 }
 
 .services .service-item p {
-  line-height: 24px;
+  line-height: 18px;
   font-size: 14px;
   margin-bottom: 0;
+    text-align: center; /* Esto centra el texto */
 }
 
 @media (min-width: 1365px) {
   .services .service-item:hover {
     transform: translateY(-10px);
-    border-color: var(--accent-color);
+    border-color: #F2EFDF;
   }
 
   .services .service-item:hover h3 {
     color: var(--accent-color);
   }
 }
-
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -969,11 +993,12 @@ section,
   color: var(--contrast-color);
 }
 
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-tem {
-  background-color: var(--surface-color);
+  background-color: #F2EFDF;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   padding: 40px 20px;
@@ -984,7 +1009,10 @@ section,
   transition: 0.3s;
   height: 100%;
 }
-
+.pricing {
+    background-color: #F2EFDF; /* Cambia este color por el que desees */
+    padding: 30px 0; /
+}
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
     transform: scale(1.1);
@@ -994,12 +1022,12 @@ section,
 .pricing h3 {
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .pricing .price {
   font-size: 36px;
-  color: var(--heading-color);
+  color: #F2EFDF;
   font-weight: 600;
   font-family: var(--heading-font);
 }
@@ -1018,11 +1046,21 @@ section,
 
 .pricing .icon {
   padding: 20px 0;
+     width: 100px;  /* Cambia este valor según el tamaño deseado */
+  height: 180px; /* Cambia este valor según el tamaño deseado */
+  object-fit: contain; /* Evita que la imagen se deforme */
+  display: flex; /* Asegura que no haya espacio extra alrededor */
+  margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    justify-content: center;
+    align-items: center;
+    
+}
+.pricing .icon img {
+  width: 150px !important;
+  height: 150px !important;
 }
 
-.pricing .icon i {
-  font-size: 48px;
-}
+
 
 .pricing ul {
   padding: 0;
@@ -1039,28 +1077,11 @@ section,
 }
 
 .pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: #F2EFDF, transparent 70%);
   text-decoration: line-through;
 }
 
-.pricing .btn-buy {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  color: var(--accent-color);
-  transition: none;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: var(--heading-font);
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid var(--accent-color);
-}
 
-.pricing .btn-buy:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
 
 .pricing .featured {
   width: 200px;
@@ -1085,7 +1106,7 @@ section,
 
 .faq .content p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #042940;
 }
 
 .faq .faq-container .faq-item {
@@ -1132,6 +1153,7 @@ section,
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
+    color: #042940;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
